@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejo Rodriguez | Portfolio</title>
+  <meta name="description" content="Portfolio de Alejo Ezequiel Rodriguez, estudiante de programación de Tandil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de navegación flotante -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#inicio" class="nav-brand">Alejo Rodriguez</a>
+      <a href="#proyectos" class="nav-link">Proyectos</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <button type="button" id="theme-toggle" class="theme-btn" aria-label="Cambiar a modo oscuro">
+        <!-- Luna (se ve en modo claro) -->
+        <svg class="icon-moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <!-- Sol (se ve en modo oscuro) -->
+        <svg class="icon-sun" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="inicio" class="container">
+
+    <!-- Presentación / Sobre mí -->
+    <section class="bento" aria-label="Presentación">
+      <div class="tile tile-hero s3">
+        <h1 class="hero-title">Hola, soy<br>Alejo</h1>
+        <div class="hero-bottom">
+          <p class="hero-text">Estudio programación en un colegio técnico y voy por Ingeniería en Sistemas. Me gusta el desarrollo web, aprender sobre IA, el fútbol y, más que nada, correr en el simulador de F1.</p>
+          <div class="btn-row">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline">Contactame</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Para poner tu foto: guardala como foto.jpg al lado de index.html
+           y reemplazá el <span> de abajo por:
+           <img src="foto.jpg" alt="Foto de Alejo Rodriguez" class="photo-img"> -->
+      <div class="tile tile-photo r2">
+        <span class="photo-initials" aria-hidden="true">AR</span>
+      </div>
+
+      <div class="tile tile-lemon">
+        <p class="tile-label">Trabajo con</p>
+        <p class="tile-big tile-big-sm">HTML, CSS, JavaScript, React, Node.js, PHP y Git</p>
+      </div>
+
+      <div class="tile tile-violet">
+        <span class="live-dot" aria-hidden="true"></span>
+        <p class="tile-big">Futuro ingeniero en sistemas</p>
+      </div>
+
+      <div class="tile tile-ink">
+        <p class="tile-label tile-label-soft">Tandil, Buenos Aires</p>
+        <p class="clock" id="clock" aria-live="off">--:--</p>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <div class="section-head">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="muted">Lo que construí este año, empezando por el que más me enorgullece.</p>
+      </div>
+
+      <div class="bento">
+        <article class="tile tile-feature s2 r2">
+          <!-- Para poner una captura de SOP: guardala como sop.jpg y reemplazá este div por
+               <img src="sop.jpg" alt="Captura de SOP" class="feature-img"> -->
+          <div class="feature-media">SOP</div>
+          <div class="feature-body">
+            <span class="badge">Proyecto Final</span>
+            <h3 class="feature-title">SOP</h3>
+            <p class="muted">Sistema de Organización Personal: una app web para organizar tareas y gestiones. Tiene frontend, backend y base de datos PostgreSQL, y está publicada en la nube.</p>
+            <div class="btn-row">
+              <a href="https://hogargestion-demo-web.onrender.com/" class="btn btn-ink" target="_blank" rel="noopener">Ver en vivo</a>            </div>
+          </div>
+        </article>
+
+        <article class="tile tile-lemon s2">
+          <h3 class="tile-big">Floxer</h3>
+          <p>Una app que hice para que mi mamá gestione las ventas y el stock de los productos de limpieza que vende.</p>
+        </article>
+
+        <article class="tile tile-violet s2">
+          <h3 class="tile-big">Más en mi GitHub</h3>
+          <div class="tile-row">
+            <p>Ahí subo todo lo que voy haciendo y aprendiendo.</p>
+            <a href="https://github.com/A7alejo" class="btn btn-white" target="_blank" rel="noopener">Ir a GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+      <p class="muted contact-lead">¿Tenés una idea o querés charlar?</p>
+      <a href="mailto:alejoezequielrodriguez@gmail.com" class="contact-big">Escribime</a>
+      <div class="btn-row">
+        <a href="mailto:alejoezequielrodriguez@gmail.com" class="btn btn-outline">alejoezequielrodriguez@gmail.com</a>
+        <a href="https://github.com/A7alejo" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    Hecho por Alejo Ezequiel Rodriguez en 2026, con HTML, CSS y JavaScript.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
